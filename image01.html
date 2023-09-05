@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 유형01</title>
+    <style>
+        /* font */
+        @import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
+        .nexon{
+            font-family: 'NexonLv1Gothic';
+            font-weight: 400;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+        /* common */
+        .container{
+            width: 1160px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        .section{
+            padding: 120px 0;
+        }
+        .section > h2{
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .section > p{
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 70px;
+            text-align: center;
+            color: #777;
+        }
+        /* image */
+        .image__inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        .image{
+            width: 49%;
+            height: 370px;
+            padding: 200px 30px 20px 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .image.img1{
+            background: url(img/image01.png) no-repeat center / cover;
+        }
+        .image.img2{
+            background: url(img/image02.png) no-repeat center / cover;
+        }
+        .image .image__title{
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        .image .image__desc{
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            font-weight: 300;
+            padding-right: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin-bottom: 20px;
+        }
+        .image .image__btn{
+            font-size: 16px;
+            color: #fff;
+            background-color: #C9491A;
+            padding: 10px 20px;
+            display: inline-block; /*margin-bottom이 먹히지 않을때 inline-block 처리 해주면 됨*/
+        }
+        .image .image__btn.yellow{
+            background-color: #D6AD0C;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="imageType" class="image__wrap nexon section">
+        <h2>포트폴리오가 실력이다.</h2>
+        <p>이미지 유형입니다. 마우스 오버시 자세한 정보가 나오는 구조입니다.</p>
+        <div class="image__inner container">
+            <article class="image img1">
+                <h3 class="image__title">다양한 색상의 세계</h3>
+                <p class="image__desc">눈을 즐겁게 해주는 다채로운 색의 세계 눈을 즐겁게 해주는 다채로운 색의 세계 눈을 즐겁게 해주는 다채로운 색의 세계</p>
+                <a href="/" class="image__btn">자세히 보기</a>
+            </article>
+            <article class="image img2">
+                <h3 class="image__title">다양한 색상의 세계</h3>
+                <p class="image__desc">눈을 즐겁게 해주는 다채로운 색의 세계 눈을 즐겁게 해주는 다채로운 색의 세계 눈을 즐겁게 해주는 다채로운 색의 세계</p>
+                <a href="/" class="image__btn yellow">자세히 보기</a>
+            </article>
+        </div>
+    </section>
+</body>
+</html>
